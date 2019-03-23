@@ -789,3 +789,74 @@ bootstrap 3
             内联表单
 
                 在最外层的<form></form>加上 class="form-inline" 表单就会变成内联表单
+
+
+            输入框组 
+
+                .input-group
+                .input-group-addon
+
+            水平表单
+
+                .control-label
+                .form-horizontal
+
+            内联多选框/单选框
+
+                .checkbox-inline
+                .radio-inline
+
+            下拉列表菜单
+
+                multiple
+
+            静态控件
+
+                .form-contrl-static
+
+                    如果需要在表单中将一行纯文本和label元素放置于同一行，为<p>元素添加.form-control-static 类即可
+
+            禁用/只读表单
+
+                [disabled]: 这个不能讲只读元素的值传递给后端
+                [readonly]: 这个可以将只读元素的值传递给后端
+
+                给一组元素设置禁用属性，使用<fieldset></fieldset>把这一组元素包起来，然后给这个fieldset设置禁用
+
+                    <filedset>
+                        <legend></legend>
+                    </fieldset>
+
+            表单校验状态
+
+                .has-success
+                .has-warning
+                .has-error
+                .has-feedback
+                .glyphicon
+                .glyphicon-ok
+                .glyphicon-warning-sign 
+                .glyphicon-remove 
+                .form-control-feedback
+                .input-lg
+                .help-block
+                只有这三种
+                上面三种属性后面加上.has-feedback 然后再配合 <span class="glyphicon glyphicon-ok form-control-feedback"></span> 可以给每种校验状态添加对应的图标
+                可以用.help-block 为表单校验状态添加辅助文本
+
+            表单大小
+
+                class='form-control input-lg'
+
+                用栅格系统中的列(column)包裹输入框或其任何父元素，都可以很容易的为其设置宽度
+                    <div class="row">
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" placeholder=".col-xs-2">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="text" class="form-control" placeholder=".col-xs-3">
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" placeholder=".col-xs-4">
+                    </div>
+                    </div>
