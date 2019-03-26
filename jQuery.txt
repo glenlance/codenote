@@ -122,4 +122,112 @@ jQuery中的其他静态方法:
 
         注意点：jQuery框架本质上是一个函数, 也就是说$.isFunction(jQuery) = true;
 
+
+    
+页面所有的dom元素加载完毕，jQuery入口函数就会执行。
+
+    $.holdReady(true); 暂停jQuery ready函数的执行
+    $.document.ready(function(){
+        $.holdReady(false); //恢复jQuery ready的执行
+        alert("ready");
+    })
         
+
+<el>:empty : 指的是既没有文本又没有子元素的元素
+
+    :contains 找到包含指定文本内容的元素
+    :has  找到包含指定子元素的元素
+
+属性和属性节点
+    1.什么是属性
+        对象身上保存的变量就是属性
+        var p = new Person();
+        p.name = "glen"
+    2.如何操作属性
+        对象.属性名称 = 值      赋值
+        对象.属性名称;          取值
+        对象["属性名称"] = 值   赋值
+        对象["属性名称"]        取值
+    3.什么是属性节点
+        <span name="glen"></span> : 在标签中添加属性就是属性节点
+        在浏览器中找到span这个DOM元素之后，展开看到的都是属性，在attributes属性中保持的所有的内容都是属性节点
+        任何对象都有属性，但是只有DOM元素才有属性节点
+        属性节点都保存在DOM元素的attributes属性当中
+    4.如何操作属性节点
+        DOM元素.setAttribute("属性名称", "值");
+        DOM元素.getAttributes("属性名称");
+    5.属性和属性节点有什么区别
+        任何对象都有属性，但是只有DOM元素才有属性节点
+        属性节点都保存在DOM元素的attributes属性当中
+
+
+    1.attr(name|pro|key,val|fn)
+    作用: 获取或者设置属性节点的值
+    可以传递一个参数， 也可以传递两个参数
+    如果传递一个参数， 代表获取属性节点的值
+    如果传递两个参数， 代表设置属性节点的值
+        注意点: 
+            如果是获取：无论找到多少个元素， 都只会返回第一个 元素指定的属性节点的值
+            如果是设置: 找到多少个元素，就会设置多少个
+            如果是设置：如果设置的属性节点不存在，那么系统会自动新增
+
+    2. removeAttr(name1 name2)
+        删除属性节点
+
+        注意点:
+            会删除所有找到的元素的指定属性节点 
+
+    3. prop方法不仅能够操作属性，他还能操作属性节点
+
+        prop和attr既然都能够操作属性节点，那么两者有什么区别呢：
+            console.log($("input").prop("checked")); // 打印出来的结果是true / false
+            console.log($("input").attr("checked")); // 打印出来的结果是checked / undefined
+
+            jQuery官方推荐在操作属性节点时，具有true和false两个属性的属性节点，如checked, selected, disabled 时使用prop()
+            其他的使用attr()
+
+
+    jQuery样式设置的三种方式：
+
+        1.逐个设置
+            $("div").css("width", "100px");
+            $("div").css("width", "100px");
+            $("div").css("width", "100px");
+
+        2.链式设置
+            $.("div").css("width", "100px").css("width", "100px").css("width", "100px").css("width", "100px")
+                jQuery链式操作如果大于3步，建议分开
+
+        3.批量设置 (推荐使用这种方式)
+            $("div").css({
+                width:"100px",
+                width:"100px",
+                width:"100px"
+            })
+
+        4.获取css样式值
+            console.log($("div").css("background"));
+
+        5. scrolltop: 用了获取元素滚动的距离顶部的偏移距离
+
+            html或者body标签都可以代表整个网页
+
+    jQuery两种事件绑定方式:
+        1.eventName(fn);
+            编码效率略高 部分事件jQuery没有实现，所以不能添加
+            可以添加多个相同或者不同的事件，事件之间不会覆盖
+        2.on(eventName, fn);
+            编码效率低 所有事件都可以添加
+            可以添加多个相同或者不同的事件，事件之间不会覆盖
+
+    jQuery事件解绑方式:
+        off方法如果不传递参数，会移除所有的事件绑定
+        off方法如果传递一个参数， 会移除所有指定类型的事件
+        off方法如果传递参数，会移除所有指定类型的指定事件
+
+
+    jQuery事件冒泡
+        1.什么是事件冒泡
+        2.如何阻止事件冒泡
+        3.什么是默认行为
+        4.如何阻止默认行为
