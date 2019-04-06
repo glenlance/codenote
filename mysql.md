@@ -1,16 +1,17 @@
 数据库设计
 
     用户表(user)：
-
+    
     id              用户id
     nickname            用户名
     password        密码
     creat_time      注册时间
     email           邮箱
 
-    
-    举报信息(report)表：
 
+​    
+​    举报信息(report)表：
+​    
     id              report_id
     named           被举报人姓名
     workplace       工作单位
@@ -28,17 +29,18 @@
     argu_time       事件发生时间
     report_time     事件举报时间
     user_id         举报人的用户id
-
+    
     评论(comment)表：
-
+    
     id              评论id
     user_id         主评人用户id
     follow_user_id  跟评人用户id
     main_comment    主评论
     follow_comment  跟评论
     report_id       主评论所在report的id
-    
-    
+
+
+​    
 
 
 
