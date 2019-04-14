@@ -28,5 +28,13 @@ pgsql 安装初始化：
 
 4，服务器启动完成。
 
+常见错误：
+
+ 1. createdb: 无法联接到数据库 template1: 致命错误:  用户 "y5039" Password 认证失败：
+
+    解决办法: 不要使用windows上的cmd、powershell ，使用随pgsql自带的 SQL shell (psql)
+
+    
+
 
 
