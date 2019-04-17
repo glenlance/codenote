@@ -95,3 +95,63 @@ Web应用被分成了处理器（handler) 和模板引擎（template engine)这�
 
 ​	用MVC模式来讲，处理器既是控制器（controller) ，也是模型（model)。在理想的MVC模式实现中，控制器应该是 “苗条的”，它应该只包含路由（routing) 代码以及HTTP报文的解包和打包逻辑；而模型则应该是 “丰满的“ ，它应该包含应用的逻辑以及数据。
 
+因为HTTP是一种无连接协议，通过这种协议发送给服务器的请求对服务器之前处理过的请求一无所知，所以应用程序才会以cookie的方式在客户端实现数据持久化，并以session的方式在服务器上实现数据持久化，而不了解这一点的人是很难理解为什么要在不同连接之间使用cookie和session实现信息持久化的。
+
+net/http标准库可以分为客户端和服务器两个部分，库中的结构和函数有些只支持客户端和服务器这两者中的一个，而有些则同时支持客户端和服务器：
+
+- Client，Response，**Header，Request和Cookie**对客户端进行支持
+
+- Server，ServeMux，Handle/HandleFunc，ResponseWriter，**Header，Request和Cookie**则对服务器进行支持
+
+  
+
+SSL证书没有所谓的“品质”和“等级”之分，只有三种不同的类型。                                         SSL证书需要向国际公认的证书证书认证机构（简称CA，Certificate Authority）申请。    CA机构颁发的证书有3种类型：                   
+域名型SSL证书（DV SSL）：信任等级普通，只需验证网站的真实性便可颁发证书保护网站；                                                                     企业型SSL证书（OV SSL）：信任等级强，须要验证企业的身份，审核严格，安全性更高；                                                                     增强型SSL证书（EV SSL）：信任等级最高，一般用于银行证券等金融机构，审核严格，安全性最高，同时可以激活绿色网址栏。                     如果是个人博客、中小企业网站和一些传统行业的形象展示类网站，一般来说只需要申请一个域名型SSL证书（DV SSL）就足够了，一方面这类网站确实没有值得加密的信息，而且HTTPS在国内普及率不高，国内网民对这个也不太重视，另一方面DV SSL证书申请流程简洁，费用低。                                                             这块的话国内我用过的是爱名网的SSL证书，性价比高是其次，主要是选择多，能满足我自己需求的前提下还有其他服务，针对我这种小白帮助真的很大，向导式服务，售后不用担心，其他家的暂时没用过，给不了其他意见。
+
+在GO语言中，一个处理器就是一个拥有ServeHTTP方法的接口，这个ServeHTTP方法需要接受两个参数：第一个参数是一个ResponseWriter接口，而第二个参数则是一个指向Request结构的指针。换句话说，任何接口只要拥有一个ServerHTTP方法，并且该方法带有以下签名，那么它就是一个处理器： ServeHTTP(http.ResponseWriter,*http.Request)
+
+处理器与处理器函数：
+
+​	处理器函数实际上就是与处理器拥有相同行为的函数：这些函数与ServeHTTP方法拥有相同的签名，也就是说，它们接受ResponseWriter和指向Request结构的指针作为参数。
+
+​	处理器函数的实现原理是这样的：Go语言拥有一种HandlerFunc函数类型，它可以把一个带有正确签名的函数f转换成一个带有方法f的Handler。换句话说，处理器函数只不过是创建处理器的一种便利方法而已。
+
+```go
+// HandleFunc registers the handler function for the given pattern.
+
+func (mux *ServeMux) HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
+
+​    if handler == nil {
+
+​        panic("http: nil handler")
+
+​    }
+
+​    mux.Handle(pattern, HandlerFunc(handler))
+
+}
+
+// Handle registers the handler for the given pattern
+
+// in the DefaultServeMux.
+
+// The documentation for ServeMux explains how patterns are matched.
+
+func Handle(pattern string, handler Handler) { DefaultServeMux.Handle(pattern, handler) }
+
+// HandleFunc registers the handler function for the given pattern
+
+// in the DefaultServeMux.
+
+// The documentation for ServeMux explains how patterns are matched.
+
+func HandleFunc(pattern string, handler func(ResponseWriter, *Request)) {
+
+​    DefaultServeMux.HandleFunc(pattern, handler)
+
+}
+```
+
+​	
+
+虽然处理器函数能够完成跟处理器一样的工作，并且使用处理器函数的代码比使用处理器的代码更为整洁，但是处理器函数并不能完全代替处理器。这是因为在某些情况下，代码可能已经包含了某个接口或者某种类型，这时我们只需要为他们添加ServeHTTP方法就可以将他们转变为处理器了，并且这种转变也有助于构建出更为模块化的Web应用。

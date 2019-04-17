@@ -32,9 +32,23 @@ pgsql 安装初始化：
 
  1. createdb: 无法联接到数据库 template1: 致命错误:  用户 "y5039" Password 认证失败：
 
-    解决办法: 不要使用windows上的cmd、powershell ，使用随pgsql自带的 SQL shell (psql)
+    解决办法: psql DATABASENAME POSTGRESUSER
 
     
 
+    
 
+创建数据库：createdb -U postgres mydb
+
+查看所有数据库：postgres=# \l
+
+删除数据库：dropdb mydb
+
+创建数据库用户：createuser -U postgres dbuser
+
+查看所有数据库用户：postgres=# \du
+
+更改数据库用户密码：postgres=# \password dbuser
+
+删除数据库用户：dropuser -U postgres dbuser
 
