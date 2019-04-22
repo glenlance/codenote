@@ -309,3 +309,206 @@ Go提供的不转义HTML机制：只要把不想被转义的内容传给template
 正如本章接下来要介绍的内容所示，对数据进行持久化的绝大部分手段都会以这样或那样的形式使用结构，在学完本节介绍的方法只会，我们就可以在进行性能扩展的时候，通过重构代码来将缓存数据存储在内存里面，而不一定非得要使用类似Redis那样的外部内存数据库。
 
 将数据存储到结构里面对数据存储操作是一种非常重要的重现手段。
+
+虽然SOAP1.2 允许通过HTTP的GET方法发送SOAP报文，但大多数基于SOAP的Web服务都是通过HTTP的POST方法发送SOAP报文的。
+
+最后，在面对JSON数据时，我们可以根据输入决定使用Decoder还是Unmarshal：如果JSON数据来源于io.Reader流，如http.Request的Body，那么使用Decoder更好；如果JSON数据来源于字符串或者内存的某个地方，那么使用Unmarshal更好。
+
+curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在“标准输出“ （stdout)上面。它支持多种协议，下面举例讲解如何将它用于网站开发。
+
+​	1，查看网页源码：
+
+​		直接在curl命令后面加上网址，就可以看到网页源码。
+
+​			例如：curl www.google.com 
+
+​			
+
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+　　<html><head>
+　　<title>301 Moved Permanently</title>
+　　</head><body>
+　　<h1>Moved Permanently</h1>
+　　<p>The document has moved <a href="http://www.sina.com.cn/">here</a>.</p>
+　　</body></html>
+```
+
+​			如果要把这个网页保存下来，可以使用`-o` 参数，这就相当于使用wget命令了。
+
+​			curl -o [文件名] www.google.com 
+
+​	2，自动跳转
+
+​			有的网址是自动跳转的。使用`-L`参数，curl 就会跳转到新的网址。
+
+​			curl -L www.google.com 
+
+​	3，显示头信息
+
+​		`-i` 参数可以显示http response的头信息，连同网页代码一起。
+
+​				curl -i www.google.com 
+
+​			-I 参数则是只显示http response的头信息，不显示网页代码。
+
+​	4，显示通信过程
+
+​			`-v` 参数可以显示一次http通信的整个过程，包括端口连接和http request头信息。
+
+​			如果你觉得上面的信息还不够，那么下面的命令可以查看更详细的通信过程。
+
+​				curl --trace output.ext www.google.com 
+
+​					或者
+
+​				curl --trace-ascii output.txt www.google.com 
+
+​	5，发送表单信息
+
+​		发送表单信息有GET和POST两种方法。GET方法相对简单，只要把数据附在网址后面就行。
+
+​						curl example.com/form.cgi?data=xxx
+
+​		POST方法必须把数据和网址分开，curl就要用到--data 参数
+
+​						curl -X POST --data "data=xxx" example.com/form.cgi
+
+​		如果你的数据没有经过表单编码，还可以让curl为你编码，参数是`--data-urlencode` 
+
+​	6，HTTP动词
+
+​			curl默认的HTTP动词是GET，使用`-X` 参数可以支持其他动词。
+
+​				curl -X POST www.example.com 
+
+​				curl -X DELETE www.example.com 
+
+​	7，文件上传
+
+​			假定文件上传的表单时下面这样：
+
+​					
+
+```html
+<form method="POST" enctype='multipart/form-data' action="upload.cgi">
+　　　　<input type=file name=upload>
+　　　　<input type=submit name=press value="OK">
+　　</form>
+```
+
+​				你可以用curl 这样上传文件：
+
+​						curl --form upload=@localfilename --form press=OK  [URL] 
+
+​	8，Referer字段
+
+​			有时你需要在http request 头信息中，提供一个referer字段，表示你是从哪里跳转过来的。
+
+​						curl --referer http://www.example.com http://www.example.com 
+
+​	9，User Agent字段
+
+​			这个字段时用来表示客户端的设备信息。服务器有时候会根据这个字段，针对不同设备，返回不同格式的网页，比			如手机版和桌面版。
+
+​		iphne4 的 User Agent 是:
+
+​			Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) 			Version/4.0.5 Mobile/8A293 Safari/6531.22.7
+
+​		curl 可以这样模拟：
+
+​			curl --user-agent "[User Agent]" [URL]
+
+​	10，cookie 
+
+​			使用	`--cookie` 参数，可以让curl 发送cookie。
+
+​					curl --cookie "name=xxx" www.example.com 
+
+​			至于具体的cookie的值，可以从http request 头信息的 `Set-Cookie`字段中得到。
+
+​			`-c cookie-file` 可以保存服务器返回的cookie到文件，`-b cookie-file` 可以使用这个文件作为cookie 信息，进			行后续的请求。
+
+​					curl -c cookies http://example.com 
+
+​					curl -b cookies http://example.com 
+
+​	11，增加头信息
+
+​			有时需要在http request 之中，自行增加一个头信息。` --header` 参数就可以起到这个作用。
+
+​					curl --header "Content-type: application/json" http://example.com 
+
+​	12，HTTP认证
+
+​		有些网域需要HTTP认证，这时curl 需要用到 `--user`参数。
+
+​					curl --user name:password example.com
+
+
+
+8.1，go与测试
+
+​		testing包需要与go test命令以及源代码中所有以_test.go后缀结尾的测试文件一同使用。尽管go并没有强制要求，但		一般来说，测试文件的名字都会与被测试源码文件的名字相对应。被测试的源码文件和测试文件必须位于同一个包之		内。
+
+​		为了测试源代码，用户需要在测试文件中创建具有以下格式的测试函数，其中Xxx可以是任意英文字母以及数字的组		合，但是首字母必须是大写的英文字母：
+
+​	
+
+```go
+func TestXxx(*testing.T){ ...  }
+```
+
+​		在测试函数内部，用户可以使用Error，Fail等一系列方法表示测试失败。当用户在终端里面执行go test 命令的时候，		所有符合上述格式的测试函数就会被执行。如果一个测试在执行时没有出现任何失败，那么我么就说函数通过了测		试。
+
+8.2，使用go进行单元测试
+
+​		顾名思义，单元测试（unit test )，就是一种为验证单元的正确性而设置的自动化测试，一个单元就是程序中的一个		模块化部分。一般来说，一个单元通常会与程序中的一个函数或者一个方法对应，但这并不是必须的。
+
+​		程序中的一个部分能否独立地进行测试，是评判这个部分能否被归纳为“单元” 的一个重要目标。一个单元通常会接受		数据作为输入并返回相应的输出，而单元测试用例要做的就是向单元传入数据，然后检查单元产生的输出是否符合预		期。
+
+​		单元测试通常会以测试套件（test suit)的形式运行，后者是为了验证特定行为而创建的单元测试用例集合。
+
+​		需要注意的是，虽然程序员在大部分时间里关注的都是如何编写代码从而实现特性并交付功能，但写出可测试的代码		同样也是非常重要的。为了做到这一点，程序员通常需要在编写程序之前对程序的设计进行思考，并把测试看作是软		件开发的重要一环。
+
+​		go test -v -cover：
+
+​					我们可以使用具体（verbose)标志 -v 来获得更详细的信息，并通过覆盖率标志 -cover 来获知测试用例对代码					的覆盖率
+
+​					除了可以使用Skip函数跳过整个测试用例，用户还可以通过向go test 命令传入短暂标志 -short ，并在测试用					例中使用某些条件逻辑来跳过测试中的制定部分。注意，这种做法跟在go test 命令中通过选项来选择性地执					行指定的测试不一样：选择性执行只会执行指定的测试，并跳过其他所有测试，而 - short 标志则会根据用户					编写测试代码的方式，跳过测试中的指定部分或者跳过整个测试用例。
+
+​	9.1，并发与并行的区别
+
+​		并发（concurrency) 指的是两个或多个任务在同一时间段内启动，运行并结束，并且这些任务可能会互动。以并发形		式执行的多个任务会同时存在，这跟顺序执行每次只会存在一个任务的情况正好相反。并发是一个非常庞大且复杂的		主题。
+
+​		并行与并发是两个看上去相似但实际上却截然不同的概念，因为并发和并行都可以同时运行多个任务，所以很多人都		把这两个概念混淆了。对于并发来说，多个任务并不需要同时开始或者同时结束 —— 这些任务的执行过程在时间上		是相互重叠的。并发执行的多个任务会被调度，并且它们会通过通信分享数据并协调执行时间（虽然这种通信并不是		必须的）。
+
+​		在并行（parallelism)中，多个任务将同时启动并执行。并行通常会把一个大任务分割成多个更小的任务，然后通过同		时执行这些小任务来提高性能。并行通常需要独立的资源（如cpu),而并发则会使用和分享相同的资源。因为并行考		虑的是同时启动和执行多个任务，所以它在直觉上会更易懂一些。并行，正如它的名字所昭示的那样，是一系列相互		平行，不会重叠的处理过程。
+
+​		并发指的是同时处理多项任务，而并行指的是同时执行多项任务。
+
+​		尽管并发和并行在概念上并不相同，但它们并不相互排斥，比如Go语言就可以创建出同时具有并发和并行这两种特		征的程序。
+
+​		需要注意的是，尽管Go语言可以用于创建并行程序，但这么语言在设计时考虑的更多是并发而不是并行。
+
+​	9.3，通道
+
+​		无缓冲的通道是同步的，它就像是一个每次只能容纳一件物体的箱子：当一个goroutine把一项信息放入无缓冲通道		之后，除非有某个goroutine把这项信息取走，否则其他goroutine将无法再向这个通道放入任何信息。
+
+​		这也 意味着，如果一个goroutine想要向一个已经包含了某项信息的无缓冲通道再放入一项信息，那么这个goroutine		将被阻塞并进入休眠状态，直到该通道变空为止。
+
+​		同样地，如果一个goroutine尝试从一个并没有包含任何信息的无缓冲通道中取出一项信息，那么这个goroutine将会		被阻塞并进入休眠状态，直到通道不再为空为止。
+
+​		通道在默认情况下以双向的（bidirectional)形式运作，用户既可以把值放入通道，也可以从通道取出值；但是通道也		可以是定向的，可以被限制为只能执行发送（send-only)操作或者只能执行接受（receive-only)操作。
+
+​		用户除了可以直接创建定向的通道之外，还可以把一个双向通道转变为定向通道。
+
+​	9.3.1，通过通道实现同步
+
+​		通道非常适合于对两个goroutine进行同步，当一个goroutine需要依赖另一个goroutine时，更是如此。
+
+​	9.3.3，有缓冲通道
+
+​		无缓冲通道或者说同步通道（synchronous channel) 使用起来非常简单，而与之相对的有缓冲通道则更复杂一些，后		者是一种异步的，先进先出消息队列。
+
+​		如果你在解决某个问题的时候，只有有限数量的工作进程可用，并且你打算限制传入请求的数量，那么有缓冲通道将		是一种非常合适的工具。
