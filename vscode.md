@@ -33,7 +33,7 @@ General
     
     ctrl+shift+\ 跳转到对应的括号
     
-    ctrl+]/[ 缩进或取消缩进
+    ctrl + ]/[ 缩进或取消缩进
     
     home/end 跳转到一行的开始和结尾
     
