@@ -74,3 +74,4 @@ Windows Invoke-WebRequest
 
 ​		$R.StatusDescription
 
+## 用PowerShell 查看环境变量: ls env:
