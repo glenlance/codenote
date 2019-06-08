@@ -27,26 +27,27 @@ jQuery会等到DOM元素加载完毕，但不会等到图片也加载完毕就�
 jQuery的核心函数
 
     $();就代表调用jQuery的核心函数
-
+    
         1.接受一个函数
             $(function(){
                 alert();
             })  //返回一个jQuery对象，对象中保存了找到的DOM元素
-
+    
         2.接受一个字符串
             2.1 接收一个字符串选择器
                 var $box1 = $(".box1"); //返回一个jQuery对象，对象中保存了找到的DOM元素
-
+    
             2.2接收一个代码片段
                 var $p = $("<p>我是段落</p>"); jQuery会根据传进去的代码片段参数生成一个html元素，
                 返回一个jQuery对象，对象中保存了找到的DOM元素
-
+    
         3.接受一个DOM元素
             接收到的DOM元素会被jQuery包装成一个jQuery对象返回给我们。
 
-        
-    [ jQuery对象其实是一个伪数组。]
 
+​        
+    [ jQuery对象其实是一个伪数组。]
+    
         什么是伪数组: 有0-length-1的属性，并且有length属性
 
 
@@ -106,24 +107,24 @@ jQuery中的其他静态方法:
         作用: 去除字符串两端的空格
         参数: 需要去除空格的字符串
         返回值: 去除空格之后的字符串
-
+    
     2.$.isWindow();
         作用: 判断传入的对象是不是window对象。
         返回值 true/false
-
+    
     3.$.isArray();
         作用: 判断传入的对象是不是array。
         返回值 true/false
-        
+
 
     2.$.isFunction();
         作用: 判断传入的对象是不是function。
         返回值 true/false
-
+    
         注意点：jQuery框架本质上是一个函数, 也就是说$.isFunction(jQuery) = true;
 
 
-    
+​    
 页面所有的dom元素加载完毕，jQuery入口函数就会执行。
 
     $.holdReady(true); 暂停jQuery ready函数的执行
@@ -131,7 +132,7 @@ jQuery中的其他静态方法:
         $.holdReady(false); //恢复jQuery ready的执行
         alert("ready");
     })
-        
+
 
 <el>:empty : 指的是既没有文本又没有子元素的元素
 
@@ -170,48 +171,48 @@ jQuery中的其他静态方法:
             如果是获取：无论找到多少个元素， 都只会返回第一个 元素指定的属性节点的值
             如果是设置: 找到多少个元素，就会设置多少个
             如果是设置：如果设置的属性节点不存在，那么系统会自动新增
-
+    
     2. removeAttr(name1 name2)
         删除属性节点
-
+    
         注意点:
             会删除所有找到的元素的指定属性节点 
-
+    
     3. prop方法不仅能够操作属性，他还能操作属性节点
-
+    
         prop和attr既然都能够操作属性节点，那么两者有什么区别呢：
             console.log($("input").prop("checked")); // 打印出来的结果是true / false
             console.log($("input").attr("checked")); // 打印出来的结果是checked / undefined
-
+    
             jQuery官方推荐在操作属性节点时，具有true和false两个属性的属性节点，如checked, selected, disabled 时使用prop()
             其他的使用attr()
 
 
     jQuery样式设置的三种方式：
-
+    
         1.逐个设置
             $("div").css("width", "100px");
             $("div").css("width", "100px");
             $("div").css("width", "100px");
-
+    
         2.链式设置
             $.("div").css("width", "100px").css("width", "100px").css("width", "100px").css("width", "100px")
                 jQuery链式操作如果大于3步，建议分开
-
+    
         3.批量设置 (推荐使用这种方式)
             $("div").css({
                 width:"100px",
                 width:"100px",
                 width:"100px"
             })
-
+    
         4.获取css样式值
             console.log($("div").css("background"));
-
+    
         5. scrolltop: 用了获取元素滚动的距离顶部的偏移距离
-
+    
             html或者body标签都可以代表整个网页
-
+    
     jQuery两种事件绑定方式:
         1.eventName(fn);
             编码效率略高 部分事件jQuery没有实现，所以不能添加
@@ -219,7 +220,7 @@ jQuery中的其他静态方法:
         2.on(eventName, fn);
             编码效率低 所有事件都可以添加
             可以添加多个相同或者不同的事件，事件之间不会覆盖
-
+    
     jQuery事件解绑方式:
         off方法如果不传递参数，会移除所有的事件绑定
         off方法如果传递一个参数， 会移除所有指定类型的事件
@@ -231,3 +232,10 @@ jQuery中的其他静态方法:
         2.如何阻止事件冒泡
         3.什么是默认行为
         4.如何阻止默认行为
+onload事件会等到DOM元素加载完毕,并且还会等到资源也加载完毕才会执行
+
+DOMContentLoaded事件只会等到DOM元素加载完毕就会执行回调
+
+在jQuery中each方法中的this指向的是key:value中的value
+
+element.cloneNode(true)和element.cloneNode(false)区别 : 前者会克隆元素内部内容,而后者不会
