@@ -1,0 +1,275 @@
+a -> 2
+b -> 5
+c -> 6
+d -> 1
+e -> 4
+f -> 3
+
+a -> 4
+b -> 6
+c -> 2
+d -> 5
+e -> 3
+f -> 1
+
+1:yes
+2:no
+3:no
+4:no
+5:no
+6:no
+7:no
+8:yes
+9:no
+10:yes
+11:yes
+
+1:alter ego
+2:alternate  alter
+3:altercation
+4:egomaniacal
+5:altruistic
+6:egocentric
+7:alternative
+8:alternate
+
+
+1:egoist
+2:alternative
+3:introvert
+4:extrovert
+5:introvert
+6:ambivert
+7:misthanthropo
+8:anthropoy
+9:gynecology
+10:polygamy
+11:astic
+12:egocentric
+13:egomaniaca
+14:
+15:
+16:
+17:
+18:monosg
+19:bigyny
+20:polygamy
+21:anthropist
+22:anthropoy
+23:anthropous
+24:
+
+
+a -> 3
+b -> 5
+c -> 2
+d -> 4
+e -> 1
+
+a -> 3
+b -> 5
+c -> 4
+d -> 1
+e -> 2
+
+a -> 3
+b -> 5
+c -> 1
+d -> 4
+e -> 2
+
+a -> 3
+b -> 5
+c -> 1
+d -> 4
+e -> 2
+
+1:yes
+2:no yes 
+3:yes
+4:no
+5:yes
+6:yes
+7:no
+8:yes
+9:yes no 
+10:yes
+11:yes
+12:no
+13:no
+14:no
+15:no
+16:no
+17:yes
+
+1: ascetic  					asceticism
+2: misgynist					
+3: misgamist					misogamy
+4: misanthropist
+5: dexterous
+6: 								gauche
+7: 								sinister
+8: misgynist					misogynous
+9: adroit						
+10: misgamist					misogamous
+11: misthanthropist				
+12: polygamist					polygamy
+	polyandr                    polyandry
+	polygamy					pologyny
+13: bigamy
+14:	gynecologist
+15: monogamy
+16: misthanthropist
+17: amibdexterous
+18: anthropist					anthropology
+19: phi							philanthropist
+20: amibdexterous				ambidexterity
+
+1: a,b
+2: b 
+3: a  c
+4: b 
+5: c 
+6: b 
+7: c 
+8: b  c
+
+ego : self 
+alter : other
+verto : to turn
+misein : hate 
+anthropos : mankind 
+gyne : 	woman
+gamos:  marriage
+centrum :  center
+dexter : right hand 
+droit :	right hand 
+monos : one 
+andros : male 
+
+1: 以人为本的
+2: 男人疯狂 慕男狂
+3: 男女的  雌雄同体
+4:			偏执狂
+5: 厌恶男性的女人 
+
+internist : 内科医生
+gynecologist : 妇科医生
+obstetrician : 产科医生
+pediatrician : 儿科医生
+dermatologist : 皮肤科医生
+ophthalmologist : 眼科医生
+orthopedist : 整形科医生 骨科医生
+cardiologist : 心脏病医生
+neurologist : 神经科医生
+psychiatrist : 精神科医生
+
+
+
+
+1:false
+2:true
+3:true
+4:true
+5:true
+6:false
+7:false
+8:true
+9:true
+10:true
+11:true
+12:false
+13:false
+
+
+
+
+
+
+
+
+1:orthopedist  orthodontist
+2:neuralgia
+3:orthopedist  orthopedics
+4:psychiatric  psychiatry
+5:			   neuritis
+6:neu			neurosis
+7:psychiatric	psychotic
+8:cardiologist	cardiac
+9:g				geriatrics
+10:cardiograph
+11:cardiogram
+
+
+
+
+
+
+
+
+1:b 
+2:b 
+3:b 
+4:a  c 
+5:c 
+6:a 
+7:c 
+8:b 
+9:b 
+
+
+
+1:内部				internus			  inside
+2:儿童				paidos				  child
+3:                  pedis                 foot
+4:                  agogos                leading
+5:                  demos                 people
+6:皮肤              derma                 skin
+7:下面              hypos                 under
+8:眼睛的            ophthalmos            eye
+9:眼睛的            oculus                eye
+10:sight version    opsis,potikos         view,vision,sight
+11:measurement      metron                measurement
+12:矫正             orthos                straight,correct
+13:牙               odontos               tooth
+14:心脏             kardia                heart
+15:                 logos                 science,study
+16:                 neuron                nerve
+17:疼痛             algos                 pain
+18:精神             psyche                mind
+19:                 iatreia               medical healing
+20:老年             geras                 old age
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
