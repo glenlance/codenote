@@ -245,6 +245,1588 @@ psychiatrist : 精神科医生
 
 
 
+a -> 	3
+b ->    5
+c ->    7
+d ->    6
+e ->    1
+f -> 4
+g -> 3
+
+
+
+
+
+
+1:T  F
+2:T
+3:F  T
+4:F
+5:T
+6:F
+7:T
+
+
+
+
+
+1:gerontology
+2:senile
+3:calligraphy
+4:cacography
+5:senilty
+6:				graphological
+7:callipygian
+
+
+
+
+
+1:b 
+2:a 
+3:a 
+4:c  b
+5:a  b 
+6:a 
+7:c  a 
+8:b 
+9:c 
+10:c 
+11:b 
+12:a 
+13:a  c 
+14:a  b 
+15:a  a and b 
+
+
+
+
+
+
+
+
+
+
+a -> 10
+b ->      9
+c -> 1
+d -> 2
+e -> 9    8
+f -> 7
+g ->      3
+h -> 4
+i -> 6
+j -> 5
+
+
+
+
+
+1:anthropology
+2:astrology
+3:astrology
+4:astronaut
+5:
+6:disaster
+7:autonomy
+8:autonomy
+9:
+10:geology
+11:
+12:biology
+13:
+14:botanist
+15:zoologist
+
+
+
+
+
+
+
+
+a -> 2  3
+b -> 4  9
+c -> 5
+d -> 1
+e -> 7
+f -> 9  4
+g -> 8
+h -> 3  2
+i -> 6
+
+
+
+
+
+
+
+
+a -> 6
+b -> 8
+c -> 4
+d -> 1
+e -> 9
+f -> 7
+g -> 3
+h -> 5
+i -> 11
+j -> 10
+k -> 2
+
+
+
+
+
+
+
+
+
+
+
+
+1:no
+2:no 
+3:yes 
+4:     yes 
+5:yes 
+6:yes 
+7:yes 
+8:yes 
+9:yes
+10:yes 
+11:yes 
+12:no 
+13:no 
+14:no 
+15:no 
+
+
+
+
+
+
+1:zoology
+2:botany 
+3:autopsy 
+4:autobiography
+5:biology
+6:geometry
+7:geology 
+8:astronomy              astrophysics
+9:aster
+10:astronomy             astronomical 
+11:astronomy 
+12:anthropology
+13:astrology             
+
+
+
+
+
+
+
+
+
+
+
+
+1:biopsy
+2:autonomy 
+3:metronomy
+4:astronaut 
+5:               cosmonaut
+6:disaster
+7:geometry       geography
+8:autonomy 
+9:zodiac 
+10:zodiac 
+11:nautical
+12:asteric       asterisk
+13:biography
+
+
+
+
+
+
+
+a -> 3
+b -> 5
+c -> 6
+d -> 7
+e -> 1
+f -> 8
+g -> 10
+h -> 9
+i -> 2
+j -> 4
+
+
+
+
+
+
+
+
+a -> 8
+b -> 4
+c -> 9
+d -> 6
+e -> 10
+f -> 1
+g -> 7
+h -> 5
+i -> 2
+j -> 3
+
+
+1:no 
+2:      yes 
+3:yes 
+4:no 
+5:no 
+6:yes   no 
+7:yes 
+8:yes 
+9:no 
+10:no
+
+
+
+
+
+
+
+
+1:                     sociological
+2:semanticist
+3:biblio               bibliophile
+4:phlander
+5:ph                   philological
+6:endometrist          entomological
+7:a                    anglophile
+8:atom
+9:                     anatomical
+10:tome
+11:                    dichotomous
+12:                    dichotomize
+13:eptiomic            epitome
+14:                    epitomize
+15:                    philanthropic
+16:eccentric
+17:philanderer
+18:                    aphrodisiac
+19:socialology         sociology
+20:asocial
+
+
+
+
+
+
+
+
+
+1:b 
+2:a 
+3:b 
+4:b 
+5:b 
+6:c 
+7:b 
+8:a 
+9:c 
+10:b 
+
+
+
+
+
+
+
+
+
+
+
+
+1:mankind
+2:center
+3:man,male 
+4:crazy          madness
+5:woman, female
+6:               the messenger of the gods
+7:venus
+8:one 
+9:hate 
+
+
+
+
+
+
+
+
+
+
+
+
+1:child 
+2:heart 
+3:pain 
+4:tooth
+5:a return
+
+
+
+
+
+1:right
+2:right  wrong
+3:wrong  right 
+4:wrong
+5:right
+6:right 
+
+
+
+
+
+
+
+
+
+
+1:no
+2:yes 
+3:no 
+4:no 
+5:no 
+6:yes 
+7:no 
+8:no 
+9:no 
+10:yes
+
+
+
+
+1:                    egregious
+2:congenial           congenital
+3:                    chronic
+4:notorious
+5:incorrigible
+6:glib
+7:congenial           inveterate
+8:                    consummate
+9:unconscionable
+10:pathological
+
+
+
+
+
+
+
+
+1:inveterate
+2:congenital
+3:notorious
+4:unconscionable
+5:glib 
+6:consummate
+7:congenital            incorrigible
+8:egregious
+9:inveterate            chronic
+10:chronic              pathological
+
+
+
+
+
+
+
+
+
+
+a -> 3
+b -> 5
+c -> 9
+d -> 6
+e -> 2
+f -> 7
+g -> 10
+h -> 8
+i -> 1
+j -> 11
+k -> 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:yes 
+2:yes 
+3:no 
+4:yes 
+5:no 
+6:yes    no
+7:yes 
+8:yes 
+9:yes 
+10:yes 
+11:no 
+12:yes
+
+
+
+
+
+
+1:genital
+2:consummate
+3:notority                notoriety
+4:gene
+5:consummate              consummation
+6:incorrigible            incorrigiblity
+7:genalogy                genetics
+8:heridatory              hereditary
+9:genesis                 
+10:                       genealogist
+11:consummatacy           consummateness
+12:genetic
+13:inveteracy             inveterateness
+14:                       veteran
+15:genalogy               genealogical
+
+
+
+
+
+
+
+
+
+1:synchorize
+2:apathy
+3:consummate
+4:inverta
+5:pathology
+6:metronomy
+7:synchorize
+8:synchorize
+9:empathetic
+10:antipathy
+11:empathetic
+12:telepath
+
+
+
+
+
+a -> 3
+b -> 5
+c ->       1
+d ->       7
+e ->       4
+f ->       2
+g ->       6
+h -> 9
+i -> 10
+j -> 8
+
+
+
+
+
+
+
+
+
+
+a -> 11  4
+b -> 4   6
+c -> 7
+d -> 1
+e -> 5   9
+f ->     11
+g -> 6   10
+h -> 3
+i ->     8
+j -> 9   5
+k -> 2   
+
+
+
+
+
+1:no 
+2:yes   no 
+3:no 
+4:no    yes 
+5:no 
+6:no 
+7:yes 
+8:yes 
+9:no 
+10:no 
+
+
+
+
+
+
+
+
+
+1:chronological : 按时间顺序排列的
+2:incongruous   : 不合适的,不相称的,不协调的 (形容词,adjective)
+3:anachronous   : 年代错误的,时代错误的
+4:anachronous   : 年代错误的,时代错误的
+5:incongruity   : 不合适,不相称,不协调 (名词,noun)
+6:apathy        : 冷漠
+7:chronometer   : 计时表
+8:pathology     : 病理学,变态,反常
+9:antipathy     : 厌恶,反感
+10:synchronize  : 使同步,在时间上一致,同速进行
+11:pathetic     : 可怜的,可悲的,令人怜惜的,无力的,不成功的
+12:anachronism  : 过时的人(或风俗、思想);弄错年代;时代错误 (名词,noun)
+13:chronicity   : 慢性; 长期性 (名词,noun)
+14:telepathy    : 心灵感应
+15:pathologist  : 病理学医生,病理学家
+16:empathy      : 同感,共鸣,同情
+17:synchronous  : 同时发生(或存在)的;同步的;共时的 (形容词,adjective)
+18:telepathic   : 用传心术的;心灵感应的;会传心术的;有心灵感应的 (形容词,adjective)
+19:chronology   : 按事件发生的年代排列的顺序;年表
+20:chronometric : 测时学的; 测定时刻的; 精密记时计的; 天文钟的
+
+
+
+
+
+
+a -> 4
+b -> 6
+c -> 8
+d -> 10
+e -> 9
+f -> 2
+g -> 7
+h -> 1
+i -> 5
+j -> 3
+
+
+
+
+
+
+
+1:yes 
+2:no 
+3:no     yes 
+4:no 
+5:no 
+6:no 
+7:yes 
+8:no     yes
+9:yes 
+10:yes 
+
+
+
+
+
+
+
+
+
+
+1:gragaious         gregarious
+2:nescience         nescient
+3:unconscience      unconscionability
+4:prescient
+5:congragate        congregation
+6:aggregate
+7:segragate
+8:glibness
+9:ominscient
+10:congragate       congregate
+
+
+
+
+
+
+1:a 
+2:b 
+3:b 
+4:a 
+5:b 
+6:b 
+7:a 
+8:b 
+9:a      c 
+10:c 
+11:a 
+12:b 
+13:c 
+14:a     c
+15:a 
+16:c 
+17:a 
+
+
+
+
+
+
+
+
+
+
+
+
+1: notorious 
+2: 
+3: 
+4:
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:self
+2:                      to hate 
+3:                      marriage
+4: woman, female
+5:                      skin 
+6: stright
+7:mental, sprit
+8:                      nerve 
+9: sicence, study
+10:life 
+11:view, vision
+12:pain
+13:                     leading 
+14:child 
+15:foot 
+16:                     people
+17:eye 
+18:                     medical healing 
+19:measurement
+20:old 
+21:                     body 
+22:                     disease
+23:teeth
+24:foot 
+25:                     hand 
+
+13分
+
+
+
+1:write
+2:                      beauty
+3:                      buttock
+4:bad, ugly
+5:                      old 
+6:mankind
+7:start
+8:sailor
+9:earth
+10:                    anaimal
+11:tongue
+12:                    to love
+13:book 
+14:self 
+15:companion
+16:famous
+17:highest
+18:change              old 
+19:birth
+20:time
+21:feeling
+22:                    herd,flock
+23:                    knowing
+24:all 
+25:                    law, order, arrangement
+
+
+16分
+
+
+
+
+
+
+1:o 
+2:                   o 
+3:                   o 
+4:s 
+5:s 
+6:                   s 
+7:o                  s 
+8:o 
+9:                   o 
+10:o 
+11:s 
+12:o 
+13:o 
+14:o 
+15:s 
+16:o 
+17:s 
+18:s                o 
+19:s 
+20:o 
+
+14分
+
+
+
+
+
+
+
+
+a -> 4
+b -> 6
+c -> 2
+d -> 5
+e -> 7 
+f -> 10
+g -> 8
+h -> 3
+i -> 9
+j -> 1
+
+10分
+
+
+a ->        3
+b -> 6
+c -> 7
+d ->        9
+e ->        4
+f ->        10
+g ->        1
+h -> 8
+i -> 9      5
+j -> 2
+
+4分
+
+
+
+
+
+
+
+
+
+1:unconscionability 
+2:glib
+3:egrgeious
+4:ingruity           incongruous 
+5:genalogy
+6:genetic
+7:                   chronological 
+8:                   gauche 
+9:cardiogram
+10:                  ambidextrous
+11:gerontology 
+12:                  telepathy
+13:pediatrician      pedodontia
+14:                  sphygmomanometer
+15:senile
+16:chir              chiromancer
+17:a                 aphrodisiac
+18:eggragate         epitome
+19:psychiatry        pathological 
+20:chronometer
+21:apathy            antipathy 
+22:synchronize 
+23:nescient
+24:prescient 
+25:                  gregarious 
+26:empathy 
+27:                  barometer
+28:segragate
+29:                  callipygian 
+30:cacography
+
+
+15分
+
+
+
+
+
+
+
+
+1:unconscionable 
+2:glib 
+3:egregious 
+4:incongruous 
+5:genealogy 
+6:gentics 
+7:chronological 
+8:gauche 
+9:cardiogram 
+10:ambidextrous
+11:gerontologist 
+12:telepathy 
+13:pedodontia 
+14:sphymomanometer
+15:senescent 
+16:chiromancer 
+17:aphrodisiac 
+18:epitome 
+19:pathological 
+20:chronometry 
+21:antipathy 
+22:synchronize
+23:nescient 
+24:prescience 
+25:gregarious 
+26:empathize 
+27:barometer 
+28:segregate
+29:callipygian
+30:cacography
+
+
+
+
+
+
+
+
+
+a -> 4
+b -> 7
+c -> 5
+d -> 9
+e -> 10
+f -> 2
+g -> 8
+h -> 1
+i -> 6
+j -> 3
+
+
+
+
+
+
+
+
+
+
+1:no 
+2:yes 
+3:yes 
+4:       no 
+5:yes 
+6:yes 
+7:yes 
+8:no 
+9:       yes 
+10:yes 
+
+
+
+
+
+
+
+
+
+1:                equivocate
+2:maligh          malign
+3:placate
+4:adulate
+5:prescribe
+6:                condone
+7:                disparage
+8:                obviates
+9:                militates
+10:titillate
+
+
+
+
+
+
+
+
+
+1:placate 
+2:                 obviate 
+3:disparage 
+4:condone 
+5:                 titillate 
+6:malign 
+7:                 equivocate
+8:militates 
+9:                 proscribe
+10:adulate 
+
+
+
+
+
+
+
+
+
+
+
+
+1:pair
+2:movement
+3:difficulty
+4: dislike
+5:condone 
+6:equlvocate
+7:
+8:adulate 
+9:question
+10:dangerous
+11:ambivert
+
+
+
+
+
+
+
+
+a -> 6   3
+b -> 5
+c -> 3   6
+d -> 7
+e -> 2
+f -> 1
+g -> 4
+
+
+
+
+
+
+
+
+
+1:no      yes 
+2:no 
+3:no 
+4:yes 
+5:yes 
+6:no 
+7:no 
+8:yes 
+9:yes 
+10:no 
+
+
+
+
+
+
+
+
+
+
+
+
+1:ambiguous
+2:                 equivocal 
+3:parity
+4:disparage        double entendre
+5:disparty 
+6:disparagement
+7:                 unequivocal
+8:disparty 
+9:parity           peer 
+10:                equivocate
+
+
+
+
+
+
+
+
+1:equivocal 
+2:inverta
+3:nocturne
+4:
+5:difficulty
+6:
+7:
+8:
+9:equine
+10:equine 
+11:pedetrician
+12:pedistrician
+13:
+14:voifero
+15:magnavox
+
+
+
+
+
+
+
+
+a -> 4
+b ->       6
+c -> 8
+d -> 10
+e ->       3
+f -> 2
+g -> 9
+h -> 11
+i -> 7     1
+j -> 
+k -> 5
+
+
+
+
+
+
+
+
+
+
+
+
+a -> 4
+b -> 9
+c -> 7
+d -> 10
+e -> 8
+f -> 6
+g -> 1
+h -> 5
+i -> 3
+j -> 2
+
+
+
+1:no 
+2:yes 
+3:no 
+4:no 
+5:yes 
+6:no 
+7:no 
+8:yes 
+9:yes 
+10:no 
+11:yes
+12:no 
+13:no 
+
+
+
+
+
+
+
+1:vocalize
+2:equlibrist             equilibrist
+3:nocturnity             nocturnal
+4:equine 
+5:vocal 
+6:                       equable
+7:iniquity               iniquitous
+8:nocturne
+9:equity
+
+
+
+
+
+
+
+
+1:vocal                 vociferous
+2:equi                  equestrian  /  equsetrienne
+3:equable               equanimity / equability
+4:inequity              
+5:iniquity
+6:equnoc                equinox
+7:equity                equitable
+8:                      equilibrium
+9:equlateral            equilateral
+10:vocalist
+
+
+
+
+
+
+
+
+1:
+2:proscribe
+3:
+4:
+5:subscribe
+6:
+7:postscripe
+8:trivial
+9:trivial
+10:military 
+11:malefaction 
+12:
+13:
+14:
+15:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a -> 3 
+b -> 5
+c -> 7
+d -> 9
+e -> 8
+f -> 2
+g -> 10
+h -> 1
+i -> 6
+j -> 4
+
+
+
+
+
+
+
+
+
+a -> 3
+b -> 5
+c -> 7
+d -> 4   6
+e -> 8
+f -> 1
+g -> 6   4
+h -> 2
+
+
+
+
+
+
+
+
+1:no 
+2:yes
+3:no 
+4:no 
+5:no 
+6:yes 
+7:no 
+8:yes 
+9:yes 
+10:no 
+
+
+
+
+
+
+
+
+
+
+
+
+1:maladroit
+2:malevolence
+3:titillate 
+4:malitant
+5:proscripe
+6:adulatory         adulation
+7:miliase           malaise
+8:malefactor
+9:malediction
+10:malefaction
+
+
+
+
+
+
+
+
+
+
+
+1:obviation 
+2:militant                            militancy 
+3:mal                                 malign, malignant, or maleficent
+4:trivial
+5:trivialities, trivia 
+6:malediction                         maledictory
+7:adulatory
+
+
+
+
+
+
+
+1:benefit
+2:
+3:malediction 
+4:predict 
+5:microphone
+6:contradict
+7:addition
+8:simplify
+9:adulatory
+10:manufacture
+11:malevolent
+12:placate
+13:adjective
+14:adulatory 
+15:im
+16:
+17:donation
+
+
+
+
+
+a -> 3
+b -> 5
+c -> 7
+d -> 6
+e -> 1
+f -> 8
+g -> 9
+h -> 2
+i -> 4
+
+
+
+
+
+
+
+a -> 3
+b -> 5
+c -> 8 
+d -> 7
+e -> 10
+f -> 9
+g -> 6
+h -> 1
+i -> 4
+j -> 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:yes 
+2:yes 
+3:yes 
+4:yes 
+5:yes 
+6:no 
+7:yes 
+8:no 
+9:no 
+10:no
+
+
+
+
+
+
+
+
+1:o 
+2:s 
+3:o 
+4:o 
+5:s    o 
+6:s 
+7:s 
+8:o 
+9:o 
+10:s   o
+11:s 
+12:o   s 
+13:s 
+14:o 
+15:s 
+
+
+
+
+
+
+1:dicdiator               dictatorial 
+2:                        condonation
+3:implacable
+4:placate                 placatory / placative
+5:volition
+6:                        placidity 
+7:                        complacence / complacency
+8:infeiblity              infidel
+9:benevolent              benign, benignant or benevolent
+10:                       infidelity
+11:benevolent             benedictory
+12:beneficiary            beneficent
+13:                       fidelity
+14:                       bona fide
+15:                       benefactor
+16:                       benefaction
+17:                       beneficiary
+18:                       placable
+
+
+
+
+
+
+
+
+
+1:b 
+2:a 
+3:b 
+4:a 
+5:b 
+6:c 
+7:c    a 
+8:b 
+9:a 
+10:a 
+11:b 
+12:a 
+
+
+
+
+
+
+
+
+1 par                                          equal 
+2 aequus          equal
+3 vox, vocis      will                         voice
+4 nox, noctis                                  night
+5 libra                                        balance
+6 latus, lateris  side
+7 equus           horse
+8 pedis           foot
+9 paidos          child
+10 fero           bear
+11 magnus                                      large
+12 scribo,scriptus                             write
+13 manus          hand 
+14 post                                        after
+15 via            road
+16 militis        solider                      soldier
+17 malus          bad,evil
+18 dico,dictus                                 say, tell
+19 volo           will                         wish
+20 facio                                       do,make
+21 bonus          good
+22 fides                                       faith
+23 phone          sound
+24 plac-          to please, to sooth to appease
+25 dono                                        give
+
+
+
+
+
+
+
+
+
+
+
+
+a ->       4
+b -> 6
+c -> 5
+d ->       7
+e ->       9
+f -> 3
+g -> 7     10
+h ->       8
+i -> 1
+j -> 8     2
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:no 
+2:no 
+3:yes 
+4:yes       no 
+5:no 
+6:no 
+7:no 
+8:no 
+9:no 
+10:yes 
+
+
+
+
+
+
+
+
+
+1:leconic
+2:veciferous
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+
+
+
+
+
+
+
+1:tacit
+2:difficulty
+3:
+4:content 
+5:complance
+6:remove 
+7:colloquor
+8:
+9:activitist
+10:simplize
+11:
+12:classic
+13:dangerous
+14:connection
+15:classical
+16:
+
+
+
+
+
+
+
+
+
+a -> 1      3
+b -> 5
+c -> 6
+d -> 2      1
+e -> 8      7
+f ->        2
+g -> 7      8
+h -> 4
+
+
+
+
+
+
+
+
+1:F 
+2:F
+3:T
+4:T
+5:T     F
+6:F
+7:F
+8:F
+
+
+
+
+
+
+
+
+
+
+
+1:soliloquize
+2:ventriloquize
+3:taciturnity
+4:tacit
+5:circumlocutory
+6:colloquial
+7:loquaciousness / loquacity
+8:reticence / reticency
+9:soliloquy 
+10:circumlocution
+
 
 
 
