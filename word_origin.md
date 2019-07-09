@@ -534,3 +534,7 @@ sopor :  sleep  >> soporific
 fic- :  from facio  to make
 
 articulus : a joint 
+
+per- : through
+
+pre-: before
