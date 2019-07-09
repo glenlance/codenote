@@ -1838,6 +1838,151 @@ h -> 4
 
 
 
+1:laconic
+2:difficultness
+3:
+4:difficulty
+5:evolve
+6:
+7:
+8:magnify
+9:grandiloquent
+10:verbal 
+11:
+12:garrulous
+13:magnianimous
+14:classify
+15:magnitude
+16:
+17:operate
+18:classial
+19:
+20:revolve
+21:complentary
+22:involve
+
+
+
+
+
+
+
+
+
+
+a -> 3
+b -> 4   6
+c -> 8
+d -> 7
+e -> 10 
+f -> 9
+g -> 1
+h -> 5
+i -> 2
+j -> 6   4
+k -> 11
+
+
+
+
+
+
+
+
+
+
+
+a -> 5
+b -> 2   3
+c -> 6
+d -> 7
+e -> 4   9
+f -> 1
+g -> 10
+h -> 3   4
+i -> 8
+j -> 9   2
+
+
+
+
+
+
+
+
+
+1:no 
+2:no 
+3:no     yes
+4:no     yes
+5:yes 
+6:no 
+7:no 
+8:no 
+9:yes    no
+10:no 
+
+
+
+
+
+
+
+
+
+
+1:evolution
+2:revolution
+3:
+
+
+
+
+
+
+
+
+1:ventriloquize 
+2:eloquent
+3:
+4:avuncular
+5:
+6:vociferous
+7:vociferous 
+8:insomnia
+9:dangerous
+10:inequity
+11:ambulance
+12:
+13:
+14:predict 
+15:
+16:
+17:cleverness
+18:
+19:activation
+20:
+21:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

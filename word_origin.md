@@ -501,5 +501,36 @@ com- : before a root starting with m,p, or b.
 
 circum- : around   >>  circumlocution
 
-laconic : pithy, concise
+laconic : pithy, concise   >>  laconic-ness, laconic-ity, laconic-ism
 
+cogo :  to drive together, compel, force
+
+verbum : word    ------  the verbose person is wordy
+
+volvo, volutus :  to roll   ------ words effortlessly roll off the voluble speaker's tongue
+
+garrio : to chatter  --------  a garrulous talker chatters away like a monkey
+
+magnus : large, big, great
+
+opus : word
+
+opero : work   >> operate, co-operate, operator
+
+verbum : word   >>  verbiage
+
+re- : back or again  >> revolver
+
+auris : ear
+
+dorsum : dorsal  >>  endorse, endorsement
+
+somnus : sleep   >>  insomnia, somniferous, somnolent
+
+ambulo : to walk
+
+sopor :  sleep  >> soporific
+
+fic- :  from facio  to make
+
+articulus : a joint 
