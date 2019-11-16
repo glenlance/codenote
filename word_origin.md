@@ -538,3 +538,297 @@ articulus : a joint
 per- : through
 
 pre-: before
+
+taceo : to be silent
+
+loquor : to speak
+
+solus : alone
+
+venter : belly 
+
+magnus : big, large, great
+
+grandis : grand
+
+verbum : word
+
+volvo, volutus : to roll
+
+garrio : to chatter
+
+animus : mind
+
+opus : work
+
+opero : to work
+
+auris : ear
+
+avunculus : uncle
+
+dorsum : back
+
+vox, vocis : voice
+
+fero : to carry or bear
+
+ambulo : to walk
+
+sopor : sleep
+
+somnus : sleep
+
+circum- : around
+
+scribo, scriptus : to write
+
+os, oris : oral, the mouth,
+
+fic ( from facio) : to make
+
+sykon : fig
+
+phanein : to show
+
+dia- : through
+
+dilettare : to delight
+
+vir : man
+
+pater, patris : father  >> patriotic, patrimony
+
+onyma : name  >> patronymic, synonym, antonym
+
+syn- : with or together
+
+homos : the same  >>  homonym, homophone
+
+phone : sound  >>  homophone
+
+archein : rule  >>  patriarch
+
+caedo-> -cide :  to kill   >>   patricide
+
+pater, patris : father
+
+mater, matris : mother
+
+sui : of oneself  >> suicide
+
+frater, fratris : brother
+
+soror : sister  >> sororicide
+
+homo : person  >>  homicide
+
+rex, regis : king  >>  regicide
+
+uxor : wife  >>   uxoricide
+
+maritus : husband   >>   mariticide
+
+infans, infantis : baby   >>   infanticide
+
+genos : race, kind   >>    genocide
+
+vir : man, male  >> virago
+
+alma : soul 
+
+frater : brother
+
+soror: sister
+
+uxor : wife
+
+maritus : husband
+
+rex, regix : king  
+
+dipsa : thirst   >>  dipsomania
+
+klepte : thief  >>  kleptomaniac
+
+megas : great, big, large   >>   megalomania
+
+nymphe : bride  >>  nymphomania
+
+satyros : satyr  >>  satyromania = satyriasis
+
+claustrum : enclosed place
+
+phobia : morbid fear  >>  claustrophobia, claustrophobe
+
+agora : market place   >>  agoraphobia
+
+akros : highest  >>  acrophobia
+
+klaein : to break
+
+eikon : a religious image
+
+theos : god
+
+a- : negative prefix
+
+gnosis : knowledge  >>  diagnosis
+
+dia- : through  >>  diagnosis
+
+pro- : before
+
+polys : many  >>  polytheism
+
+pan : all  >>  pantheism
+
+logos : science or study
+
+lechier : to lick
+
+libido : pleasure  >>  libidinous
+
+lascivia :   wantonness   >>   lascivious
+
+lubricus :  slippery   >>  lubricate
+
+licere : to be permitted   >> license
+
+illicit : no to be permitted
+
+lewed : vile  
+
+lustful : pleasure, desire
+
+libidinous, lascivious, lubricious, licentious, lewd, lecherous, lustful
+
+prurio : to itch, to long for  >>  prurient, pruritis, pruritic
+
+hypos : under  >> hypodermic, hypochondriac, hypothyroid, hypotension
+
+hyper : over  >>  hypercritical, hyperthyroidism, hypertension, hyperacidity, hypersensitive
+
+chondros : the cartilage of the breastbone
+
+##  hypotension  <<  == >>  hypertension
+
+##  hypotensive  <<  ==  >>  hypertensive
+
+sykon :  fig
+
+phanein :  to show
+
+vir :  man, male
+
+pater , patris :  father
+
+onyma :  name
+
+homos :  the same
+
+phone :  sound
+
+archein :  to rule
+
+mater, matris :  mother
+
+alma :  soul
+
+sui :  of oneself
+
+caedo(-cide) : to kill, killing
+
+frater, fratris : brother
+
+soror : sister
+
+homo : person
+
+rex, regix : king
+
+uxor : wife
+
+maritus : husband
+
+infans, infantis : baby
+
+genos :  race,kind
+
+mania :  madness 
+
+monos : one
+
+dipsa : thirst
+
+kepte : thief 
+
+pyros : fire
+
+incendo, incensus : to set fire
+
+ardo, arsus : to burn
+
+mega : great, large
+
+satyros : satyr
+
+nymphe : bride
+
+claustrum : enclosed place
+
+agora :  market place
+
+akros : highest
+
+phobia : morbid dread
+
+eikon : religious image
+
+klaein : to break
+
+theos : god
+
+gnostos : known
+
+gnosis : knowledge
+
+polys : many
+
+pan : all 
+
+logos : science,study
+
+prurio :  to itch
+
+hypos : under
+
+hyper : over
+
+meter : mother  >>  metropolis
+
+polis : city  >>  metropolis : 首都, 首府, 省会城市,  >>  megapolis : 大城市
+
+vivo : live  >>  convivo : live together  >> vivacious : full of the joy of living  >> vivacity (noun)  >>  vivid : 生动的  >> revive : bring back to life  >>  vivisection : 活体解剖  >> viviparous : 胎生的  oviparous : 卵生的
+
+vita : life  >> vital : 有生命力的, 至关重要的 : a vital matter  >> vitality (noun)  >> vitalize : 使充满活力(adv)  >> vitamin : 维生素
+
+sect : cut 
+
+convivium : feast , banquet
+
+pareo : to give birth  >> parent , viviparous , oviparous
+
+ovum : egg  >>  oviparous, oval , ovoid , ovulate , ovary ,
+
+oval, ovoid : egg-shaped
+
+ovary : 卵巢
+
+ovum : 卵子, 卵细胞 
+
+fetus :  胎儿 fetal : 胎儿的
+
+revitalize  >>  revitalization
+
+devitalize : 夺走生命
